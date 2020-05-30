@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap");
+
+:root {
+  --primary-color: hsl(240, 38%, 20%);
+  --secondary-color: hsl(240, 18%, 77%);
+
+  --font: "Inter", sans-serif;
+  --fontsize: 2em;
+
+  --fontweight1: 300;
+  --fontweight2: 500;
+  --fontweight3: 700;
+}
+
+img {
+  width: 100%;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.testimonial {
+  width: 80%;
+  font-size: 18px;
+  font-family: var(--font);
+  font-weight: var(--fontweight1);
+  text-align: center;
+}
+.container .tanya,
+.container .john {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(5em);
+  align-items: center;
+  height: 100vh;
+}
+
+.tanya img,
+.john img {
+  width: 70%;
+  border-radius: 5px;
+  margin-bottom: 60px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.name {
+  margin-top: 30px;
+  text-align: center;
+  font-family: var(--font);
+  font-weight: var(--fontweight3);
+  line-height: 20px;
+}
+.job {
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: var(--fontweight3);
+  font-family: var(--font);
+}
+
+.btn {
+  position: absolute;
+  top: 49%;
+  right: 40%;
+  width: 80px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+  background: #ffffff;
+  padding: 10px;
+}
+.btn img {
+  width: 15%;
+}
+
+.pattern-bg {
+  position: absolute;
+  width: 90%;
+  top: 3em;
+  right: 1em;
+  z-index: -1;
+}
+.quotes {
+  position: absolute;
+  width: 15%;
+  bottom: 15em;
+  right: 10em;
+  display: flex;
+}
+.curve {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+}
