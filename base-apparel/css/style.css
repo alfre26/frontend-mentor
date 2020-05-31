@@ -20,7 +20,7 @@ body {
   background: #fff8fb;
 }
 .container {
-  max-width: 400px;
+  max-width: 420px;
   margin: auto;
 }
 img {
@@ -94,10 +94,26 @@ img {
   width: 60px;
   border-radius: 100px;
   margin-left: auto;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.051),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.073), 0 12.5px 10px rgba(0, 0, 0, 0.09),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.107), 0 41.8px 33.4px rgba(0, 0, 0, 0.129),
+    0 100px 80px rgba(0, 0, 0, 0.18);
 }
 .form button img {
   width: 25%;
   align-self: center;
+}
+.error {
+  width: 6%;
+  display: none;
+}
+.valid {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--softred);
+  font-weight: var(--fontweight3);
+  display: none;
+  text-align: center;
 }
 .attribution {
   font-size: 11px;
@@ -108,4 +124,82 @@ img {
 }
 
 @media (min-width: 1200px) {
+  body {
+    /* min-height: 100vh; */
+    background-image: url("../images/bg-pattern-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .header {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+  }
+  .header img {
+    width: 100%;
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .img-container {
+    position: absolute;
+    margin-left: auto;
+    width: 25%;
+    height: 75.2vh;
+    top: 0;
+    right: 0;
+    background-image: url("../images/hero-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .img {
+    border: 2px solid blueviolet;
+    padding: 200px;
+    width: 100px;
+    height: 0vh;
+  }
+  .box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    left: -30px;
+    top: 10%;
+    height: 50vh;
+  }
+  .title {
+    text-align: left;
+    font-size: 90px;
+  }
+  .description {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .form {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .form input {
+    padding: 15px;
+    font-size: 20px;
+  }
+  .form button {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.051),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.073), 0 12.5px 10px rgba(0, 0, 0, 0.09),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.107), 0 41.8px 33.4px rgba(0, 0, 0, 0.129),
+      0 100px 80px rgba(0, 0, 0, 0.18);
+    padding: 20px;
+    width: 100px;
+  }
+  .valid {
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 12px;
+    font-size: 16px;
+  }
 }
