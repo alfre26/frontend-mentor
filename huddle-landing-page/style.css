@@ -1,0 +1,263 @@
+:root {
+  --Pink: hsl(322, 100%, 66%);
+
+  --VeryPaleCyan: hsl(193, 100%, 96%);
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --GrayishBlue: hsl(208, 11%, 55%);
+
+  --textcolor: #fff;
+  --fontSize: 18px;
+  --fontO: "Open Sans", sans-serif;
+  --fontP: "Poppins", sans-serif;
+
+  --weight1: 400;
+  --weight2: 600;
+  --weight3: 700;
+}
+
+.btn {
+  border: none;
+  border-radius: 100px;
+}
+.header-container {
+  background: var(--VeryPaleCyan);
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: center;
+}
+.header {
+  margin: auto;
+  max-width: 375px;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateY(5px);
+  margin-bottom: 65px;
+}
+.header .btn.try {
+  padding: 5px;
+  margin-right: 25px;
+  color: #000;
+  background: #fff;
+  width: 100px;
+  font-size: 12px;
+  font-family: var(--fontP);
+  font-weight: var(--weight2);
+}
+.header .nav .logo {
+  width: 25%;
+  cursor: pointer;
+}
+.header .text {
+  margin: 7%;
+}
+.header .title {
+  text-align: center;
+  font-family: var(--fontP);
+  font-size: 24px;
+  font-weight: var(--weight2);
+  line-height: 1.5;
+}
+.header .description {
+  margin: 20px 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.589);
+  line-height: 1.5;
+}
+.btn.pink {
+  cursor: pointer;
+  margin-left: 40px;
+  background: var(--Pink);
+  color: var(--textcolor);
+  font-family: var(--fontP);
+  font-weight: var(--weight1);
+  font-size: 12px;
+  padding: 10px;
+  width: 230px;
+  height: 40px;
+}
+
+.header img {
+  width: 90%;
+  margin: 5%;
+}
+
+.card-container {
+  margin: auto;
+  max-width: 375px;
+}
+.card-container .card {
+  background: #fff;
+  margin: 50px 15px;
+  box-shadow: 0 0.1px 2.9px rgba(0, 0, 0, 0.028),
+    0 0.4px 9.6px rgba(0, 0, 0, 0.042), 0 2px 43px rgba(0, 0, 0, 0.07);
+
+  padding: 10px;
+  border-radius: 10px;
+}
+.card-container .card img {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  margin: 70px;
+}
+
+.card-container .card .title {
+  text-align: center;
+  font-family: var(--fontO);
+  font-weight: var(--weight3);
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.card-container .card .description {
+  text-align: center;
+  text-align: center;
+  font-family: var(--fontO);
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.472);
+  margin: 30px 5%;
+  line-height: 1.5;
+}
+.card.last {
+  transform: translateY(7em);
+}
+.card.last .btn.pink {
+  margin: 0 50px 40px 45px;
+  z-index: 10;
+}
+
+.footer-container {
+  background: var(--VeryDarkCyan);
+}
+.footer {
+  padding: 70px 0;
+  margin: auto;
+  max-width: 375px;
+}
+.footer .logo-white {
+  padding: 20px;
+  width: 40%;
+  margin-right: autos;
+  margin-top: 30px;
+}
+.footer .row {
+  margin-top: -20px;
+  padding: 0px 20px;
+  color: #fff;
+  font-family: var(--fontO);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+.footer .row img {
+  width: 15px;
+  height: 15px;
+}
+.location {
+  margin-bottom: 40px;
+}
+.footer .row .info {
+  margin-left: 5px;
+  padding: 20px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.twitter,
+.instagram,
+.facebook {
+  padding: 10px;
+  border: 1px SOLID white;
+  cursor: pointer;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  margin: 5px;
+}
+.twitter:hover,
+.instagram:hover,
+.facebook:hover {
+  color: #339af0;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.copy {
+  text-align: center;
+  color: #fff;
+  font-family: var(--fontP);
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.list {
+  margin-top: 50px;
+  list-style: none;
+  font-size: 16px;
+  color: #fff;
+  font-family: var(--fontO);
+}
+.list li {
+  margin: 20px 0;
+  transform: translateX(-1em);
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .card-container .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    max-width: 1200px;
+    transform: translateX(-25em);
+  }
+  .card.right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .card.last {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(7em) translateX(-8em);
+    width: 700px;
+    max-width: 700px;
+  }
+  .card.last .title.last {
+    font-size: 30px;
+  }
+  .card-container .card .title {
+    text-align: left;
+    margin-left: 35px;
+    font-size: 50px;
+  }
+
+  .card-container .card .description {
+    text-align: left;
+    font-size: 20px;
+  }
+  .footer .container {
+    padding: 0;
+  }
+  .footer {
+    border: 2px solid red;
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+  }
+  .footer .left {
+    margin-left: auto;
+  }
+}
