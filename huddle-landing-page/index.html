@@ -11,8 +11,8 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
       rel="stylesheet"
@@ -30,6 +30,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
+    
     <div class="container">
       <div class="header-container">
         <div class="header">
@@ -39,24 +40,26 @@
               Try It Free
             </button>
           </div>
-
-          <div class="text">
-            <div class="title">
-              Build The Community <br />
-              Your Fans Will Love
+          <div class="hero"> 
+  
+            <div class="text">
+              <div class="title">
+                Build The Community <br />
+                Your Fans Will Love
+              </div>
+              <div class="description">
+                Huddle re-imagines the way we build communities. You have a voice,
+                but so does your audience. Create connections with your users as
+                you engage in <br class="salto"/>
+                genuine discussion.
+              </div>
+              <button class="btn pink">
+                Get Started For Free
+              </button>
             </div>
-            <div class="description">
-              Huddle re-imagines the way we build communities. You have a voice,
-              but so does your audience. Create connections with your users as
-              you engage in <br />
-              genuine discussion.
+  
+            <img src="./images/illustration-mockups.svg" alt="" />
             </div>
-            <button class="btn pink">
-              Get Started For Free
-            </button>
-          </div>
-
-          <img src="./images/illustration-mockups.svg" alt="" />
         </div>
       </div>
 
@@ -81,6 +84,7 @@
 
         <div class="card">
           <img
+          class="first-img"
             src="./images/illustration-flowing-conversation.svg"
             alt="grow together"
           />
@@ -135,8 +139,8 @@
             <div class="row">
               <img class="location" src="./images/icon-location.svg" alt="" />
               <div class="info">
-                Lorem ipsum dolor sit amet, <br />
-                consectetur adipiscing elit, sed do <br />
+                Lorem ipsum dolor sit amet, <br class="salto"/>
+                consectetur adipiscing elit, sed do <br class="salto"/>
                 eiusmod tempor incididunt ut labore et <br />
                 dolore magna aliqua
               </div>
@@ -158,12 +162,16 @@
         </div>
 
           <ul class="list">
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>FAQ</li>
-            <li> Career</li>
-            <li> Blog </li>
-            <li>Contact Us</li>
+            <div>
+              <li>About Us</li>
+              <li>What We Do</li>
+              <li>FAQ</li>
+            </div>
+            <div>
+              <li> Career</li>
+              <li> Blog </li>
+              <li>Contact Us</li>
+            </div>
           </ul>
 
 
